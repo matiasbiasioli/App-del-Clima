@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-one: #7AA874;
+    --color-two: #F7DB6A;
+    --color-three: #EBB02D;
+    --color-four: #D864A9;
+}
+body {
+    background: linear-gradient(to right, var(--color-one), var(--color-four));
+    font-family: 'Montserrat' sans-serif;
+    @import url: ('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+}
+.wrap__container {
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+.wrap__container .app__title {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+}
+.wrap__weather {
+    padding-bottom: 2rem;
+    background: linear-gradient(to right, var(--color-four), var(--color-one));
+}
+.weather__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.weather__search input {
+    padding: 1rem;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border: none;
+}
+.weather__search button {
+    border-radius: 50%;
+    padding: .8rem 1rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.weather__search button img{
+    width: 1.2rem;
+    
+}
+.weather {
+    text-align: center;
+}
+.weather__icon img {
+    width: 10em;
+}
+.wrap__weather .weather__temperature {
+    padding: .3rem;
+    font-size: 3rem;
+}
+.wrap__weather .weather__type {
+    padding: .3rem;
+    font-size: 1.5rem;
+}
+.wrap__weather .weather__location {
+    text-align: center;
+    padding: .3rem;
+    font-size: 1.3rem;
+}
+.wraper__hum__wind {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.weather__hum__wind {
+    display: flex;
+    align-items: center;
+}
+.weather__hum__wind img {
+    height: 2rem;
+    margin-right: .5rem;
+    
+}
+.weather__hum__wind .details {
+    font-size: 1rem;
+}
+
+.weather {
+    display: none;
+}
+.notification {
+    margin-top: 1rem;
+    text-align: center;
+    display: none;
+}
+
+/* Vista Desktop */
+@media (min-width: 760px) {
+    .wrap__container {
+        width: 30vw;
+        margin-top: 2rem;
+    }
+}

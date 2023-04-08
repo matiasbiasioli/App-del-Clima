@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App del clima</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrap__container">
+    <div class="app__title">
+      <p>App del Clima</p>
+    </div>
+    <div class="wrap__weather">
+      <div class="weather__search">
+        <input type="text" placeholder="Ingrese Ciudad">
+        <button><img src="./img/search.png" alt=""></button>
+      </div>
+      <div class="notification">No es una ciudad o país válido...</div>
+      <div class="weather">
+        <div class="weather__icon">
+          <img src="" alt="">
+        </div>
+        <div class="weather__temperature">
+          <p></p>
+        </div>
+        <div class="weather__type">
+          <p></p>
+        </div>
+        <div class="weather__location">
+          <p></p>
+        </div>
+        <div class="wraper__hum__wind">
+          <div class="weather__hum__wind">
+            <img src="./img/humidity.png" alt="">
+            <div class="details">
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="weather__hum__wind">
+            <img src="./img/wind.png" alt="">
+            <div class="details">
+              <p class="wind"></p>
+              <p>wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
