@@ -44,7 +44,7 @@ async function checkWeather(city) {
     weatherIcon.src = "./img/snow.png";
   } else if (data.weather[0].main == "Wind") {
     weatherIcon.src = "./img/wind.png";
-  } else if (data.weather[0].main == "mist") {
+  } else if (data.weather[0].main == "Mist") {
     weatherIcon.src = "./img/Mist.png";
   } else if (data.weather[0].main == "Humidity") {
     weatherIcon.src = "./img/humidity.png";
@@ -55,8 +55,8 @@ async function checkWeather(city) {
 }
 
 // Evento tecla Enter al buscador
-document.addEventListener('keyup', function (event) {
-  if (event.key == 'Enter') {
+document.addEventListener('keyup', function (e) {
+  if (e.key == 'Enter') {
     checkWeather(searchBox.value);
   }})
 // Evento click al buscador
